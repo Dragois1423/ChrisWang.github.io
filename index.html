@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Getting to know Chris Wang better">
+<meta name="keywords" content="HTML, CSS, JavaScript, introduction, website">
+<meta name="author" content="Chris Wang">
+<meta http-equiv="refresh" content="30">
+<meta name="viewport" content="width=device-width" initial="1.0">
+<title> Chris Wang </title>
+<style>
+    .counter {
+    counter-reset: section;
+}
+    .countersection{
+    counter-reset:subsection
+}
+    
+    .countersection::before {
+        counter-increment: section;
+        content: "Section " counter(section) ": ";
+}
+    
+    .countersubsection::before{
+        counter-increment: subsection;
+        content: counter(section) "." counter(subsection) " ";
+    }
+        
+    table, th, td {
+        border: 1px solid black;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: powderblue;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        font-family: sans-serif;
+    }
+    
+    li a:hover {
+        background-color: #111111;
+    }
+    div.sticky{
+        position:sticky;
+        top: 0;
+        border: 0;
+    }
+    
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }    
+    
+    .dropdowncontent{
+        position: absolute;
+        display: none;
+        background-color: lightgray;
+        color: black;
+        text-align: center;
+        padding: 2px;
+        border: 1px solid;
+        z-index: 1;
+        overflow: auto;
+        min-width: 250px;
+    }
+    
+    .dropdown:hover .dropdowncontent{
+        display: block;
+    }
+    
+    .width{
+        width: 50%;
+    }
+    </style>
+    <!-- See info on LISTS (unordered lists)-->
+</head>
+<style>
+html {
+    background-image: url("pexels-photo-37728.jpeg");
+    background-size: cover;
+}
+</style>
+<!-- REVISE THE BACKGROUNDDDD-->
+    
+<h1 style="font-size:48px;"> About Chris Wang</h1>
+    
+<blockquote cite="https://www.brainyquote.com/quotes/chanda_kochhar_848186?src=t_aim">
+"Aim for the sky, but move slowly, enjoying every step along the way. It is all those little steps that make the journey complete." -Chanda Kochhar
+</blockquote>
+    
+<pre style="font-family:sans-serif;">
+Welcome to (insert my website name)! Here, you can view my current and/or future projects, 
+my interests, my hobbies, and some misc. stuff that I include for my own convenience.
+</pre>
+<hr>
+
+<table style="width:100%">
+<tr>
+    <th>Table of Contents</th>
+    <th>Description</th>
+</tr>
+<tr>
+    <td> About My Resume</td>
+    <td> A place to learn a bit more about my resume in greater details.</td>
+</tr>
+<tr> 
+    <td>Passion</td>
+    <td>A place where I discuss my hobbies and favourites.</td>
+</tr>
+<tr>
+    <td> Projects</td>
+    <td> A place where I discuss my current and/or future projects.</td>
+</tr>
+<tr>
+    <td>Misc</td>
+    <td> A place for random stuff</td>
+</tr>
+
+    </table>
+<div class="sticky">
+    
+<ul>
+    <li><a href="#MR">About my resume</a></li>
+    <li><a href="#Passion">Passion</a></li>
+    <li><a href="#Projects">Projects</a></li>
+    <li><a href="#Misc">Misc</a></li>
+    </ul>
+
+</div>
+<hr>
+<h3>In case the menu fails to load or work:<h3>
+<h3>About My Resume</h3>
+<p><a href="#MR">Go to the About my resume Section</a></p>
+<h3>Passion</h3>
+    <p><a href="#Passion">Go to the Passion Section</a></p>
+<h3>Projects</h3>
+    <p><a href="#Projects">Go to the Projects Section</a></p>
+<h3>Miscallaneous</h3>
+    <p><a href="#Misc">Go to the Misc Section</a></p>
+<!-- REMEMBER TO ADD MORE SECTIONS IF NEEDED-->
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 id="MR">About My Resume</h2>
+    <p> My resume usually composed of three sections: <b>Work Experience</b>, <b>Personal Projects</b>, and <b>Volunteering</b></p>
+<div class="counter">
+    <p class="countersection"><b> Work Experience</b></p>
+        <div>
+        <h4 class="countersubsection">McDonald's Crew Member</h4>
+            <p class="width">McDonald's is a globally recognized fast food restaurant, which prides on its ability to consistently meet the demands of customers' expectations of fast and quality meals. As a crew member, I collaborated with my peers in order to maintain the excellent standards that customers expect. Whether it'd be becoming the cashier, janitor or the cook for the night, I would communicate with my peers to ensure the restaurant not only is sanitary but also feels welcoming for the customers. That is, there was no single task that I was designated to accomplish because my role as a crew member was to identify and assist any area that was lacking. </p>
+    
+            <br>
+            <br>
+            
+    <p class="countersection"> <b> Personal Projects </b></p>
+      
+        <h4 class="countersubsection"> Personalied Website about myself</h4>
+            <p class="width"> There are two reasons why I created ths project, one of which to familiarize myself with web programming languages through a passion project, and other reason being that this project would assist the employers to understand me in general a lot better. Needing to skim through multiple resumes, employers would spend at most one minute on my resume before moving onto the next. This projects elaborates on all of the features as indicated on my resume in case an employer would like to understand me a bit better before an interview. 
+                <br> 
+                <br>
+                <br>
+                
+                There are two "All About Me" links: one with HTML only and one with both HTML and CSS, with  Javascript possibly included upon request. This is due to the fact that github unfortunately is incompatible with CSS and Javascript (unless I'm mistaken). And so, I created a README.MD document specifically with only HTML as a quick method of allowing the employers run through all of the major points regarding my activities and extracurriculars. </p></div>
+         
+        <h4 class="countersubsection"> Molecular interaction simulation under different temperature </h4>
+            <p class="width"> To be completed by August 2018</p>
+            
+        <h4 class="countersubsection"> Molar Mass Calculator </h4>
+            <p class="width"> To be completed by August 2018</p>
+ 
+                <br>
+                <br>
+            
+    <p class="countersection"> Volunteering </p> 
+        
+        <h4 class="countersubsection"> Air Cadet</h4>
+            <p class="width"> Air Cadet is a youth program whose primary purpose is to develop and nurture teens to becme great and impactful leaders in the future. While in air cadet, I was an instructor for younger cadets known as the "Level 2's". I was responsible of giving either 30 minute or 60 minute lessons every other week. That is, I was responsible for educating them on aerospace material through engaging and interesting activities. And this ultimately required excellent preparation and communication skills on my part, because I had to allocate time away from school towards the construction and rehearsal of my lesson plans prior to the actual teaching day in order to acheive maximum efficiency when presenting.</p>
+    
+        <h4 class="countersubsection"> Homework Club Captain</h4>
+            <p class="width"> Homework Club is a weekly after school program dedicated to help elementary school children with their homework. As captain, I oversaw the whole program and led a group of 9 volunteers to assist children with assignments, studying for tests and reading. What's more, I also devised learning strategies for each children based on their learning capabilities. Ultimately, I had to possess a strong, adaptive ability for unforeseen situations and excellent accountability.
+          
+        <h4 class="countersubsection"> Summer Camp Assistant</h4>
+            <p class="width"> Everyday from 9am to 3pm for two months as the assistant, I was primarily responsible for setting up and leading activities along with the program leaders and to support them whenever required. Because the program leaders had to oversee the entire program, I was essentially the person whom all the children would communicate first, the one closest to them during the camp. My responsibilities also included but not limited to resolving conflicts between children, connecting with their parents and overseeing the children's safety during outdoor excursions. In order to complete all this, I demonstrated superior teamwork prowess and possessed excellent team player qualities. 
+                
+                <br>
+                <br>
+                
+<h5><b>Hover over "Passion" and "Projects"!</b></h5>
+<div class="dropdown"> 
+<h2 id="Passion">Passion</h2>
+    <div class="dropdowncontent">
+        <p>Knitting</p>
+        <p>Self-Learning</p>
+        
+    </div>
+</div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+<div class="dropdown">  
+<h2 id="Projects">Projects</h2>
+    <div class="dropdowncontent">
+        <p>Molecular interaction simulation under different temperature </p>
+        <p>Molar Mass Calculator</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+<h2 id="Misc">Misc</h2>
+
+</body>
+</html>
