@@ -52,7 +52,7 @@
     /* Add a card effect for articles */
     
     .bg {
-    /*background-color: lightcyan;*/
+    /*background-color: #D0E1F9;*/
     }
     
     .columnc {
@@ -135,11 +135,15 @@
     }
     
     .column.thirty {
-        width: 30%;
+        width: 33%;
     }
     
     .column.fifty {
         width: 46%;
+    }
+    
+    .column.sixty {
+        width: 60%;
     }
 
 /* Clear floats after the columns */
@@ -159,7 +163,7 @@
     p:hover{
     background-color: lightslategrey;
     color:whitesmoke;
-    border: 2px solid purple;
+    border: 2px solid #598234;
         
 }
     /*a:hover{
@@ -206,8 +210,10 @@
     text-align: center;
     /*background-image: url("maxresdefault.jpg");*/
     /*background-size: cover;*/
-    color: black;
-    /*background-color: azure;*/
+    color: whitesmoke;
+    background-color: #4D648E;
+    border: 5px solid #D0E1F9;
+    border-radius: 4px;
     }
     
     @media screen and (max-width:100%) {
@@ -236,6 +242,47 @@
     position: relative;
     bottom: -30px;
     }
+    
+    .picture{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 15px;
+    margin-right: 10px;
+    fill: #fff;
+    }
+    
+    .resize {
+    width:80%; /* you can use % */
+    height: auto;
+    }
+    
+    .blue {
+    background-color: #F1F1F2;
+    }
+    
+    img {
+    border: 5px solid #ACD0c0;
+    border-radius: 4px;
+    width: 150px;
+    }
+    
+    .mySlides {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:400px;
+        height:400px;
+        }
+    
+    .mySlides2 {
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        width:400px;
+        height:400px;
+        }
+    
     
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
@@ -274,7 +321,7 @@
 <!-- REVISE THE BACKGROUNDDDD-->
 <div class="header">
 <div class="center">
-<div class="shiftl">
+
     <h1><b style="font-size:150%">Chris Wang</b></h1>
         <div class="w3-panel w3-large">
             
@@ -289,13 +336,12 @@
         </div>
 </div>
 </div>
-</div>
 
-<hr>
 
 <table style="width:100%">
     
-<div class="sticky">
+    
+<!--<div class="sticky">
 
 <ul >
     <li><a href="#WExp">Work Experience</a></li>
@@ -306,7 +352,7 @@
     <li><a href="#Misc">Future Plans</a></li>
 </ul>
 
-</div>
+</div> -->
     
 <tr>
     <th>Table of Contents</th>
@@ -332,50 +378,54 @@
     </table>
 
 <!-- REMEMBER TO ADD MORE SECTIONS IF NEEDED-->
-
+<div class="blue">
 <div class="center">
-<h2 class="shiftl" id="resume" style="font-family:Arial; color:black; font-size: 40pxx"><b>About My Resume</b></h2>
-    <pre class="shiftl" style="font-family:Arial"> My resume usually composed of three sections: <b>Work Experience</b>, <b>Personal Projects</b>, and <b>Volunteering</b></pre>
+<h2   id="resume" style="font-family:Arial; color:black;"><b>About My Resume</b></h2>
+    <!--<<pre style="font-family:Arial"> My resume usually composed of three sections: <b>Work Experience</b>, <b>Personal Projects</b>, and <b>Volunteering</b></pre>-->
+</div>
 </div>
 
-
 <div class="center">
-    <div class="counter">
-        <h2 class="shiftl" id="WExp" style="font-family:Arial; color: navy"><b> Work Experience</b></h2>
-    </div>
-<hr>
+    <!--<<div class="counter">
+        <h2 id="WExp" style="font-family:Arial; color: navy"><b> Work Experience</b></h2>
+    </div-->
 <div class="bg">
 <div class= "row">
-    <div class= "column fifty">
+    <div class= "column">
     <div class="bordercr">
     <div class="columnc">
     <div class="boxshadow">
-    <div class="roundGrey">
-    <h4 class="actname"> McDonald's Crew Member</h4>
-        <h5 style="font-family:Arial; text-align:center"> Crew Member/Employee </h5>
-        </div>
-
+    <!--<div class="roundGrey">
+        </div>-->
+         
+        
         <picture>
-        <img src="maxresdefault.jpg" style="width:100%;">
+        <img src="maxresdefault.jpg" style="width:60%"  height="auto";>
         </picture>
+        
+    <h4 class="actname"> McDonald's Crew Member</h4>
+    <h5 style="font-family:Arial; text-align:center"> Crew Member/Employee </h5>
+    
         <p class="roundGrey">McDonald's is a globally recognized fast food restaurant, which prides on its ability to consistently meet the demands of customers' expectations of fast and quality meals. As a crew member, I collaborated with my peers in order to maintain the excellent standards that customers expect. Whether it'd be becoming the cashier, janitor or the cook for the night, I would communicate with my peers to ensure the restaurant not only is sanitary but also feels welcoming for the customers. That is, there was no single task that I was designated to accomplish because my role as a crew member was to identify and assist any area that was lacking. </p>
         </div>
         </div>
         </div>
         </div>
-    <div class="column fifty">
+    <div class="column">
     <div class="bordercl">
     <div class="columnc">
     <div class="boxshadow">
-    <div class="roundGrey">
-    <h4 class="actname">Design Team (UWAFT) </h4>
-        <h5 style="font-family:Arial; text-align:center"> Mechanical SubTeam Member </h5>
-        </div>
-  
+    <!--<div class="roundGrey">
+        </div>-->
+    <div class="blue2">
         <picture>
         <img src="UWAFT%202018%20photo.lnk" style="width:100%;">
         </picture>
-        <p class="roundGrey">TO BE UPDATED McDonald's is a globally recognized fast food restaurant, which prides on its ability to consistently meet the demands of customers' expectations of fast and quality meals. As a crew member, I collaborated with my peers in order to maintain the excellent standards that customers expect. Whether it'd be becoming the cashier, janitor or the cook for the night, I would communicate with my peers to ensure the restaurant not only is sanitary but also feels welcoming for the customers. That is, there was no single task that I was designated to accomplish because my role as a crew member was to identify and assist any area that was lacking. </p>
+        </div>
+        
+        <h4 class="actname">Design Team (UWAFT) </h4>
+        <h5 style="font-family:Arial; text-align:center"> Mechanical SubTeam Member </h5>
+        <p class="roundGrey">UWAFT, also known as University of Waterloo's alternative fuels team, is a design team whose sole purpose is to completely redesign a vehicle while following certain guidelines set by GM Motors such that to compete in competition that happens every four years. For this competition, every team is required to design a Level 2 autonomous electric vehicle.</p>
     </div>
     </div>
     </div>
@@ -385,135 +435,177 @@
 </div>
 
 <div class="center">
-    <div class="counter">
-        <h2 class="shiftl" id="PProj" style="font-family:Arial; color: navy"><b> Personal Projects</b></h2>
-    </div>
-</div>
+    <!--<div class="counter">
+        <h2 id="PProj" style="font-family:Arial; color: navy"><b> Personal Projects</b></h2>
+    </div>  -->
+
       
 <div class= "row">
-    <div class= "column fifty">
+    <div class= "column">
     <div class="bordercr">
     <div class="columnc">
     <div class="boxshadow">
-    <div class="roundGrey">
-    <h4 class="actname">Model Rocket Creation</h4>
-        <h5 style="font-family:Arial; text-align:center"> Mechanical SubTeam Member </h5>
-        </div>
   
-        <picture>
-        <img src="maxresdefault.jpg" style="width:100%;">
-        </picture>
-        <p class="roundGrey">There are two reasons why I created ths project, one of which to familiarize myself with web programming languages through a passion project, and other reason being that this project would assist the employers to understand me in general a lot better. Needing to skim through multiple resumes, employers would spend at most one minute on my resume before moving onto the next. This projects elaborates on all of the features as indicated on my resume in case an employer would like to understand me a bit better before an interview.  </p>
+        <!--<picture>
+        <img src="gc1.jpg" style="width:60%"  height="auto";>
+        </picture>-->
+
+    <div class="w3-content w3-section" style="max-width:500px";>
+        <img class="mySlides" src="gc1.jpg"  height="auto";>
+        <img class="mySlides" src="gc2.jpg"  height="auto";>
+        <img class="mySlides" src="gc3.jpg"  height="auto";>
+    </div> 
+        
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);
+}
+</script>
+        <h4 class="actname">Gloves Case</h4>
+        <h5 style="font-family:Arial; text-align:center"> Mechanical SubTeam Member </h5>
+        <p class="roundGrey">Earlier in the year, UWAFT received extra pair of gloves and there were no space to store the gloves. Each component of the gloves case was designed like a puzzle piece such that multiple pieces are fit together in order to create the container. In addition, the gloves case was designed for two different glove sizes - medium and large - as different individuals have different hand sizes. A rough 3d sketch of the entire product was first created, followed by a general orthographic drawing of the top, side and bottom view before diving into actual 3d modelling.</p>
         </div>
         </div>
         </div>
     </div>
-    <div class= "column fifty">
+    <div class= "column">
     <div class="bordercr">
     <div class="columnc">
     <div class="boxshadow">
-    <div class="roundGrey">
-    <h4 class="actname">Personal Home Design</h4>
-        <h5 style="font-family:Arial; text-align:center"> Mechanical SubTeam Member </h5>
-        </div>
+ 
 
-        <picture>
-        <img src="maxresdefault.jpg" style="width:100%;">
-        </picture>
+        <!--<picture>
+        <img src="maxresdefault.jpg" style="width:60%"  height="auto";>
+        </picture>-->
+        
+        <div class="w3-content w3-display-container" style="max-width:500px";>
+        <img class="mySlides2" src="bsh1.jpg"  height="auto";>
+        <img class="mySlides2" src="bsh2.jpg"  height="auto";>
+        
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div> 
+        
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+        
+        <h4 class="actname">Bar Soap Holder</h4>
+        <h5 style="font-family:Arial; text-align:center"> Mechanical SubTeam Member </h5>
         <p class="roundGrey">There are two reasons why I created ths project, one of which to familiarize myself with web programming languages through a passion project, and other reason being that this project would assist the employers to understand me in general a lot better. Needing to skim through multiple resumes, employers would spend at most one minute on my resume before moving onto the next. This projects elaborates on all of the features as indicated on my resume in case an employer would like to understand me a bit better before an interview.  </p>
         </div>
         </div>
         </div>
     </div>
-    <div class= "column fifty">
+    <div class= "column">
     <div class="bordercr">
     <div class="columnc">
     <div class="boxshadow">
-    <div class="roundGrey">
-    <h4 class="actname">Infrastructure Modelling</h4>
-        <h5 style="font-family:Arial; text-align:center"> Mechanical SubTeam Member </h5>
-        </div>
-
+ 
         <picture>
-        <img src="maxresdefault.jpg" style="width:100%;">
+        <img src="maxresdefault.jpg" style="width:60%"  height="auto";>
         </picture>
+        
+        <h4 class="actname">Infrastructure Modelling</h4>
+        <h5 style="font-family:Arial; text-align:center"> Mechanical SubTeam Member </h5>
         <p class="roundGrey">There are two reasons why I created ths project, one of which to familiarize myself with web programming languages through a passion project, and other reason being that this project would assist the employers to understand me in general a lot better. Needing to skim through multiple resumes, employers would spend at most one minute on my resume before moving onto the next. This projects elaborates on all of the features as indicated on my resume in case an employer would like to understand me a bit better before an interview.  </p>
         </div>
         </div>
         </div>
     </div>
-        <div class= "column fifty">
+        <div class= "column">
         <div class="bordercr">
         <div class="columnc">
         <div class="boxshadow">
-        <div class="roundGrey">
-        <h4 class="actname">Molar Mass Calculator</h4>
-            <h5 style="font-family:Arial; text-align:center"> Mechanical SubTeam Member </h5>
-            </div>
             
             <picture>
-            <img src="maxresdefault.jpg" style="width:100%;">
+            <img src="maxresdefault.jpg" style="width:60%"  height="auto";>
             </picture>
+            
+            <h4 class="actname">Molar Mass Calculator</h4>
+            <h5 style="font-family:Arial; text-align:center"> Mechanical SubTeam Member </h5>
             <p class="roundGrey">There are two reasons why I created ths project, one of which to familiarize myself with web programming languages through a passion project, and other reason being that this project would assist the employers to understand me in general a lot better. Needing to skim through multiple resumes, employers would spend at most one minute on my resume before moving onto the next. This projects elaborates on all of the features as indicated on my resume in case an employer would like to understand me a bit better before an interview.  </p>
             </div>
             </div>
             </div>
     </div>
 </div>
-    
+</div>
 
 <div class="center">
-    <div class="counter">
-        <h2 class="shiftl" id="VTR" style="font-family:Arial; color: navy"><b> Volunteering</b></h2>
-    </div>
-</div>
-<hr>
+    <!--<div class="counter">
+        <h2 id="VTR" style="font-family:Arial; color: navy"><b> Volunteering</b></h2>
+    </div> -->
 
 <div class="bg">
 <div class= "row">
-    <div class= "column fifty">
+    <div class= "column">
     <div class="bordercr">
     <div class="columnc">
     <div class="boxshadow">
-    <div class="roundGrey">
-    <h4 class="actname">Air Cadet</h4>
-        </div>
 
         <picture>
-        <img src="maxresdefault.jpg" style="width:100%;">
+        <img src="maxresdefault.jpg" style="width:60%"  height="auto";>
         </picture>
+        
+        <h4 class="actname">Air Cadet</h4>
         <p class="roundGrey">Air Cadet is a youth program whose primary purpose is to develop and nurture teens to becme great and impactful leaders in the future. While in air cadet, I was an instructor for younger cadets known as the "Level 2's". I was responsible of giving either 30 minute or 60 minute lessons every other week. That is, I was responsible for educating them on aerospace material through engaging and interesting activities. And this ultimately required excellent preparation and communication skills on my part, because I had to allocate time away from school towards the construction and rehearsal of my lesson plans prior to the actual teaching day in order to acheive maximum efficiency when presenting.</p>
         </div>
         </div>
         </div>
     </div>
-        <div class= "column fifty">
+        <div class= "column">
         <div class="bordercr">
         <div class="columnc">
         <div class="boxshadow">
-        <div class="roundGrey">
-    <h4 class="actname">Summer Camp Assistant</h4>
-        </div>
   
         <picture>
-        <img src="maxresdefault.jpg" style="width:100%;">
+        <img src="maxresdefault.jpg" style="width:60%"  height="auto";>
         </picture>
+            
+        <h4 class="actname">Summer Camp Assistant</h4>
         <p class="roundGrey">Everyday from 9am to 3pm for two months as the assistant, I was primarily responsible for setting up and leading activities along with the program leaders and to support them whenever required. Because the program leaders had to oversee the entire program, I was essentially the person whom all the children would communicate first, the one closest to them during the camp. My responsibilities also included but not limited to resolving conflicts between children, connecting with their parents and overseeing the children's safety during outdoor excursions. In order to complete all this, I demonstrated superior teamwork prowess and possessed excellent team player qualities.</p>
             </div>
             </div>
             </div>
     </div>
-        <div class= "column fifty">
+        <div class= "column">
         <div class="bordercr">
         <div class="columnc">
         <div class="boxshadow">
-        <div class="roundGrey">
-    <h4 class="actname">Homework Club Captain</h4>
-        </div>
 
         <picture>
-        <img src="maxresdefault.jpg" style="width:100%;">
+        <img src="maxresdefault.jpg" style="width:60%"  height="auto";>
         </picture>
+            
+        <h4 class="actname">Homework Club Captain</h4>
         <p class="roundGrey">Homework Club is a weekly after school program dedicated to help elementary school children with their homework. As captain, I oversaw the whole program and led a group of 9 volunteers to assist children with assignments, studying for tests and reading. What's more, I also devised learning strategies for each children based on their learning capabilities. Ultimately, I had to possess a strong, adaptive ability for unforeseen situations and excellent accountability.</p>
             </div>
             </div>
@@ -521,14 +613,17 @@
     </div>
 </div>
 </div>
+</div>
     
 <br>
 <br>
     
 
 <div class="center">
+<div class="blue">
 <h2 class="shiftl" id="p&m" style="font-family:Arial; color: black"><b> Passion & Misc</b></h2>
 <h5 class="shiftl">Hover over "Passion, "Future Projects" and "Future Plans"!</h5>
+</div>
 </div>
 <div class= "row">
     <div class="center">
